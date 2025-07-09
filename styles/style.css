@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* fonts */
+.merriweather-normal {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter-normal{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* theme */
+:root {
+    --primary-c: #ffffff;
+    --secondary-c: #FF0000;
+    --dark-1: #070211;
+}
+
+/* reusable */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.common-design-sec {
+    width: 100%;
+    height: 518px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling code for header section */
+
+.header {
+    background-image: url('../images/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 518px;
+    margin-top: 50px;
+}
+
+.header-sec {
+    /* background-color: #070211; */
+    background-image: linear-gradient(#070211, #07021100);
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.header-title-container {
+    text-align: center;
+    width: 600px;
+}
+
+.header-title-container .header-greeting {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--primary-c);
+}
+
+.header-title-container .header-title {
+    font-size: 72px;
+    font-weight: 800;
+    color: var(--primary-c);
+}
+
+/* styling code for discount section */
+.new-year-discount {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    margin: 120px 0;
+}
+
+.discount-title {
+    font-size: 88px;
+    color: var(--secondary-c);
+    margin-bottom: 48px;
+}
+
+.discount-sub-title-1 {
+    font-size: 24px;
+    color: var(--secondary-c);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.discount-sub-title-2 {
+    font-size: 48px;
+    color: var(--dark-1);
+    margin-bottom: 48px;
+}
+
+/* styling code for welcome section */
+.welcome-container {
+    width: 550px;
+    margin-left: 126px;
+}
+
+.welcome-sec {
+    width: 100%;
+    background-image: url('../images/Vectorrr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 518px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.welcome-title-1 {
+    font-size: 64px;
+    color: var(--primary-c);
+    letter-spacing: 8px;
+}
+
+.welcome-info {
+    font-size: 18px;
+    color: var(--primary-c);
+    font-weight: 100;
+    margin-top: 24px;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
+
+.join-btn {
+    font-size: 20px;
+    color: var(--primary-c);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 32px;
+}
+
+/* styling code of destination section */
+.destination {
+    margin-bottom: 120px;
+}
+
+.destination-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--dark-1);
+    margin-bottom: 10px;
+}
+
+.destination-title span {
+    color: var(--secondary-c);
+}
+
+.margin-b {
+    margin-bottom: 48px;
+}
+
+.join-now-red-btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--primary-c);
+    padding: 16px 32px;
+    background-color: var(--secondary-c);
+    border-radius: 8px;
+}
+
+/* styling code for offer section */
+.offer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 28%;
+    /* background-color: tomato; */
+}
+
+.left h5 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: var(--secondary-c);
+}
+
+.left h3 {
+    font-size: 48px;
+    margin-bottom: 22px;
+    font-weight: bold;
+}
+
+.left p {
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--dark-1);
+    font-weight: 100;
+}
+
+.mid {
+    width: 32%;
+    /* background-color: tomato; */
+}
+
+.circle-shape {
+    width: 100%;
+    height: 360px;
+    border: 15px solid var(--secondary-c);
+    border-radius: 50%;
+    /* background-color: var(--secondary-c); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-img {
+    width: 250px;
+    aspect-ratio: 1;
+}
+
+.right {
+    width: 25%;
+    /* background-color: tomato; */
+}
