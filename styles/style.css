@@ -117,18 +117,25 @@
 /* styling code for welcome section */
 .welcome-container {
     width: 550px;
-    margin-left: 126px;
+    margin-left: 120px;
 }
 
 .welcome-sec {
     width: 100%;
-    background-image: url('../images/Vectorrr.png');
+    background-image: linear-gradient(to right, #070211, #07021100), url('../images/Vectorrr.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 518px;
     display: flex;
     align-items: center;
     margin-bottom: 120px;
+    justify-content: space-between;
+    border-radius: 14px;
+}
+
+.welcome-sec img {
+    width: 250px;
+    margin-right: 120px;
 }
 
 .welcome-title-1 {
@@ -187,6 +194,8 @@
 .offer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
 }
 
 .left {
@@ -207,7 +216,7 @@
 }
 
 .left p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 32px;
     color: var(--dark-1);
     font-weight: 100;
@@ -230,11 +239,226 @@
 }
 
 .circle-img {
-    width: 250px;
+    width: 280px;
     aspect-ratio: 1;
 }
 
 .right {
-    width: 25%;
+    width: 20%;
     /* background-color: tomato; */
+}
+
+.right h3 {
+    font-size: 48px;
+    color: var(--secondary-c);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.right p {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--dark-1);
+    font-weight: 100;
+    margin-bottom: 43px;
+}
+
+/* styling code for holiday's offer with discount section */
+.holidays-title-container {
+    height: 986px;
+    background-image: url('../images/Group\ 75.png'), url('../images/Rectangle\ 2.png'), url('../images/Group\ 44.png');
+    background-repeat: no-repeat;
+    background-size: 500px 500px, contain, 300px 300px;
+    background-position: 9% 93%, bottom, 85% 65%;
+    margin-bottom: 120px;
+}
+
+.holidays-title-container h5 {
+    font-size: 24px;
+    color: var(--dark-1);
+    margin-bottom: 16px;
+}
+
+.holidays-title-container h2 {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: var(--dark-1);
+
+    & span {
+        color: var(--secondary-c);
+    }
+}
+
+.holidays-title-container p {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--dark-1);
+    font-weight: 100;
+    margin-bottom: 43px;
+}
+
+/* styling code for gallary section */
+.gallary-sec {
+    margin-bottom: 120px;
+}
+.gallary-title-container {
+    width: 800px;
+}
+
+.gallary-title-container h5 {
+    font-size: 24px;
+    color: var(--secondary-c);
+    margin-bottom: 16px;
+}
+
+.gallary-title-container h2 {
+    font-size: 48px;
+    color: var(--dark-1);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.gallary-title-container p {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--dark-1);
+    font-weight: 100;
+    margin-bottom: 43px;
+}
+
+.gallary-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.gallary-container img {
+    width: 31%;
+}
+
+/* styling code for newsletter section */
+.newsletter-sec {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.newsletter-container {
+    width: 800px;
+}
+
+.newsletter-container img {
+    margin-bottom: 40px;
+}
+
+.newsletter-container h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.newsletter-container p {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--dark-1);
+    font-weight: 100;
+    margin-bottom: 43px;
+}
+
+.newsletter-container input[type='email'] {
+    font-family: "Inter", sans-serif;
+    padding: 25px 30px;
+    width: 450px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-left: 1px solid var(--secondary-c);
+    border-top: 1px solid var(--secondary-c);
+    border-bottom: 1px solid var(--secondary-c);
+    border-right: none;
+    font-size: 18px;
+    outline: none;
+    color: var(--dark-1);
+    /* margin-right: -1px; */
+    /* background-color: blue; */
+}
+
+.newsletter-container input[type='submit'] {
+    font-family: "Inter", sans-serif;
+    padding: 24.5px 30px;
+    /* width: 300px; */
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* border: 1px solid var(--secondary-c); */
+    border: none;
+    background-color: var(--secondary-c);
+    color: var(--primary-c);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: tomato; */
+}
+
+/* stling code for footer section */
+.footer {
+    width: 100vw;
+    color: var(--primary-c);
+    background-color: var(--dark-1);
+}
+
+.footer-sec {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: var(--dark-1);
+    padding: 120px 0;
+}
+
+.footer-sub-sec-1 {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.address p {
+    font-size: 24px;
+    width: 404px;
+}
+
+.contact p {
+    font-size: 24px;
+}
+
+.footer-sub-sec-2 {
+    padding: 50px 0;
+}
+
+.mr {
+    margin-right: 24px;
+}
+
+/* hr {
+    margin: 50px 0;
+    background-color: var(--primary-c);
+} */
+
+.footer-sub-sec-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.footer-sub-sec-3 p {
+    font-size: 24px;
+}
+
+.footer-sub-sec-3 a {
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--primary-c);
 }
